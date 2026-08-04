@@ -2,20 +2,10 @@
 ---
 
 # 🎙️ إضافة دبلجة Gemini Live الاحترافية (Chrome Extension V3)
-<table>
-  <tr>
-    <td width="50%" valign="top">
 
-##
 ### 💡 فكرة الإضافة (Core Concept)
 إضافة متقدمة لمتصفح جوجل كروم تقوم بالتقاط تدفق الصوت المباشر من التبويبة النشطة (مثل فيديوهات يوتيوب، الكورسات التعليمية، البث المباشر، أو الأفلام بأي لغة عالمية)، ومعالجته بتقنيات **Web Audio API & AudioWorklet**، ثم إرساله عبر اتصال `WebSocket` ثنائي الاتجاه إلى **Google Gemini 3.5 Live Translate API** لدبلجته وترجمته فورياً إلى **اللغة العربية الفصيحة** من الكلام إلى الكلام (Speech-to-Speech) بصوت بشري طبيعي وفي الوقت الفعلي.
 
-    </td>
-    <td width="50%" align="center" valign="middle">
-    <img width="353" height="572" alt="Screenshot 2026-08-04 151335" src="https://github.com/user-attachments/assets/22ac5959-4c23-48a2-ad47-716514d738d8" />
-    </td>
-  </tr>
-</table>
 ---
 
 ### ✨ مميزات الإضافة (Key Features)
