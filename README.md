@@ -12,7 +12,7 @@
 
     </td>
     <td width="50%" align="center" valign="middle">
-      <img src="https://github.com/Eng0Ahmed/Gemini-Live-Dubbing-Extension/blob/main/png.151335%2004-08-2026.png?raw=true" alt="واجهة إضافة Gemini Live" width="100%" style="max-width: 320px; border-radius: 8px;">
+    <img width="353" height="572" alt="Screenshot 2026-08-04 151335" src="https://github.com/user-attachments/assets/22ac5959-4c23-48a2-ad47-716514d738d8" />
     </td>
   </tr>
 </table>
