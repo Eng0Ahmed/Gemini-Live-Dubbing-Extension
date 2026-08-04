@@ -1,3 +1,4 @@
+<img width="353" height="572" alt="Screenshot 2026-08-04 151335" src="https://github.com/user-attachments/assets/f28391e1-8614-4f88-9b06-fba125c48a66" />
 فيما يلي دليل شامل ومنظم يتضمن **فكرة الإضافة، مميزاتها، وطريقة تثبيتها واستخدامها خطوة بخطوة**:
 
 ---
@@ -71,3 +72,4 @@
 - **المطور:** Eng_Ahmed Abdelaziz
 - **البريد الإلكتروني:** eng.ahmed.abdelaziz.2022@gmail.com
 - **الهاتف / واتساب:** 01024735044
+<img width="353" height="572" alt="Screenshot 2026-08-04 151335" src="https://github.com/user-attachments/assets/22ac5959-4c23-48a2-ad47-716514d738d8" />
