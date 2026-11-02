@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gemini Live Audio Dubber</title>
+  <link rel="stylesheet" href="popup.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="app-container">
+    <!-- Header -->
+    <header class="app-header">
+      <div class="logo-box">
+        <div class="pulse-icon"></div>
+        <h1>دبلجة Gemini Live الاحترافية</h1>
+      </div>
+      <span id="statusBadge" class="status-badge status-disconnected">غير متصل</span>
+    </header>
+
+    <!-- Content Body -->
+    <main class="app-body">
+      <!-- API Key Section -->
+      <div class="input-group">
+        <label for="apiKeyInput">مفتاح API الخاص بـ Gemini:</label>
+        <div class="input-wrapper">
+          <input type="password" id="apiKeyInput" placeholder="أدخل المفتاح هنا (AIzaSy...)" autocomplete="off">
+          <button type="button" id="toggleApiKeyVisibility" class="icon-btn" title="إظهار/إخفاء المفتاح">👁️</button>
+        </div>
+        <a href="https://aistudio.google.com/api-keys" id="getApiKeyLink" target="_blank" class="get-api-link">
+          🔑 الحصول على مفتاح API مجاناً من Google AI Studio ↗
+        </a>
+      </div>
+
+      <!-- Main Action Button -->
+      <button id="toggleDubbingBtn" class="btn-primary">
+        <span id="btnIcon">▶</span>
+        <span id="btnText">بدء الدبلجة التلقائية المباشرة</span>
+      </button>
+
+      <!-- Status Detail Message -->
+      <div id="statusDetails" class="status-details">جاهز للبدء</div>
+
+      <!-- Compact Audio Dashboard Card -->
+      <div class="audio-dashboard-card">
+        <div class="dashboard-header">
+          <div class="dash-title">
+            <span class="dash-icon">📊</span>
+            <span>محلل الصوت والبث</span>
+          </div>
+          <span id="timerBadge" class="timer-badge">00:00:00</span>
+        </div>
+
+        <!-- Animated Audio Waveform Visualizer -->
+        <div class="visualizer-container">
+          <div class="bar bar-1"></div>
+          <div class="bar bar-2"></div>
+          <div class="bar bar-3"></div>
+          <div class="bar bar-4"></div>
+          <div class="bar bar-5"></div>
+          <div class="bar bar-6"></div>
+          <div class="bar bar-7"></div>
+          <div class="bar bar-8"></div>
+          <div class="bar bar-9"></div>
+          <div class="bar bar-10"></div>
+        </div>
+
+        <!-- Telemetry Metrics Grid -->
+        <div class="metrics-grid">
+          <div class="metric-item">
+            <span class="metric-label">الجودة:</span>
+            <span class="metric-value">16kHz HD</span>
+          </div>
+          <div class="metric-item">
+            <span class="metric-label">الاستجابة:</span>
+            <span id="latencyValue" class="metric-value">فوري (~120ms)</span>
+          </div>
+          <div class="metric-item">
+            <span class="metric-label">النموذج:</span>
+            <span class="metric-value accent">Gemini 3.5 Live</span>
+          </div>
+          <div class="metric-item">
+            <span class="metric-label">المطابقة:</span>
+            <span class="metric-value accent">تلقائية (Auto)</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Compact Pro Audio Studio Controls -->
+      <div class="pro-controls-card">
+        <!-- Dubbed Audio Volume Master Slider -->
+        <div class="volume-control-group">
+          <div class="slider-header">
+            <label for="dubbedVolumeSlider">مستوى صوت الدبلجة:</label>
+            <span id="volumeValueText" class="slider-value-badge">100%</span>
+          </div>
+          <input type="range" id="dubbedVolumeSlider" min="0" max="150" value="100" step="5">
+        </div>
+
+        <!-- Original Tab Ducking Selector -->
+        <div class="input-group">
+          <label for="duckingSelect">صوت التبويبة الأصلي:</label>
+          <select id="duckingSelect">
+            <option value="duck" selected>خفض الأصلي (Ducking 15%)</option>
+            <option value="mute">كتم الأصلي (Mute Tab)</option>
+            <option value="normal">إبقاء الأصلي (100%)</option>
+          </select>
+        </div>
+
+        <!-- Vocal Enhancement Filters -->
+        <div class="vocal-presets-group">
+          <label>فلتر تحسين الصوت:</label>
+          <div class="preset-buttons">
+            <button type="button" class="preset-btn active" data-preset="vocal">🎙️ وضوح الصوت</button>
+            <button type="button" class="preset-btn" data-preset="noise">🔇 تنقية الضوضاء</button>
+            <button type="button" class="preset-btn" data-preset="flat">🎧 صوت طبيعي</button>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- Developer Footer -->
+    <footer class="app-footer">
+      <div class="dev-card">
+        <div class="dev-name">المطور: Eng_Ahmed Abdelaziz</div>
+        <div class="dev-contact">
+          <span>eng.ahmed.abdelaziz.2022@gmail.com</span>
+          <span class="dot">•</span>
+          <span>01024735044</span>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>
